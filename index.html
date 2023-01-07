@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/output.css">
+ 
+  
+  <title>Tip calculator app</title>
+</head>
+<body class="bg-Lightgrayishcyan grid place-content-center min-h-screen text-2xl font-SpaceMono">
+  <main class="w-375 bg-white rounded-2xl p-8 mt-4 lg:w-full lg:flex">
+    <section class="mb-7 lg:mb-2 lg:w-auto lg:pr-4">
+      <div class="mb-7 relative">
+        <p class="parrafo">Bill</p>
+        <input class="input " type="text">
+        <img class="absolute top-12 left-5" src="./images/icon-dollar.svg" alt="dollar">
+      </div>
+
+      <div>
+        <p class="parrafo mb-4">Select Tip %</p>
+        <div class="grid grid-cols-2 gap-4 mb-7 lg:grid-cols-3 ">
+          <button class="butons">5%</button>
+          <button class="butons">10%</button>
+          <button class="butons">15%</button>
+          <button class="butons">25%</button>
+          <button class="butons">50%</button>
+          <input class="input lg:w-28 pl-0 placeholder:text-Darkgrayishcyan" type="text" placeholder="Custom">
+        </div>
+      </div>
+
+      <div class="relative">
+        <p class="parrafo">Number of People</p>
+        <input class="input"type="text" >
+        <img class="absolute top-12 left-5 " src="./images/icon-person.svg" alt="person">
+      </div>
+    </section>
+
+
+    <section class="p-4 bg-Verydarkcyan rounded-2xl lg:w-375">
+      <div class="flex justify-between my-7 ">
+        <div>
+          <p class="text-base text-white">Tip Amount</p>
+          <p class="text-sm text-Darkgrayishcyan">/ person</p>
+        </div>
+        <p class="text-3xl text-Strongcyan">$4.27</p>
+      </div>
+
+      <div class="flex justify-between mb-7 lg:mb-32">
+        <div>
+          <p class="text-base text-white">Total</p>
+          <p class="text-sm  text-Darkgrayishcyan">/ person</p>
+        </div>
+        <p class="text-3xl text-Strongcyan">$32.79</p>
+      </div>
+
+      <button class="bg-Strongcyan w-full h-11 rounded-md text-Verydarkcyan uppercase mb-5 lg:mb-0" >Reset</button>
+    </section>
+  </main>
+  <footer class="text-sm text-center ">
+    <p>
+      Challenge by <a class="text-Verydarkcyan font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> <br> 
+      Coded by <a class="text-Verydarkcyan font-bold" href="https://www.frontendmentor.io/profile/Kevin-AC">Kevin argumedo</a>
+    </p>
+    
+  </footer>
+</body>
+</html>
