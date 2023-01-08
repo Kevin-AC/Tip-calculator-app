@@ -15,37 +15,37 @@
     <section class="mb-7 lg:mb-2 lg:w-auto lg:pr-4">
       <div class="mb-7 relative">
         <p class="parrafo">Bill</p>
-        <input class="input " type="text">
+        <input id="Bill" class="input " type="text">
         <img class="absolute top-12 left-5" src="./images/icon-dollar.svg" alt="dollar">
       </div>
 
       <div>
         <p class="parrafo mb-4">Select Tip %</p>
-        <div class="grid grid-cols-2 gap-4 mb-7 lg:grid-cols-3 ">
-          <button class="butons">5%</button>
-          <button class="butons">10%</button>
-          <button class="butons">15%</button>
-          <button class="butons">25%</button>
-          <button class="butons">50%</button>
-          <input class="input lg:w-28 pl-0 placeholder:text-Darkgrayishcyan" type="text" placeholder="Custom">
+        <div id="botones" class="grid grid-cols-2 gap-4 mb-7 lg:grid-cols-3 ">
+          <button id="btn5" class="butons">5%</button>
+          <button id="btn10" class="butons">10%</button>
+          <button id="btn15" class="butons">15%</button>
+          <button id="btn25" class="butons">25%</button>
+          <button id="btn50" class="butons">50%</button>
+          <input  id="Custom" class="input lg:w-28 pl-0 placeholder:text-Darkgrayishcyan" type="text" placeholder="Custom">
         </div>
       </div>
 
       <div class="relative">
         <p class="parrafo">Number of People</p>
-        <input class="input"type="text" >
+        <input id="People" class="input"type="text" >
         <img class="absolute top-12 left-5 " src="./images/icon-person.svg" alt="person">
       </div>
     </section>
 
 
-    <section class="p-4 bg-Verydarkcyan rounded-2xl lg:w-375">
+    <section class="p-4 lg:px-8 bg-Verydarkcyan rounded-2xl lg:w-375">
       <div class="flex justify-between my-7 ">
         <div>
           <p class="text-base text-white">Tip Amount</p>
           <p class="text-sm text-Darkgrayishcyan">/ person</p>
         </div>
-        <p class="text-3xl text-Strongcyan">$4.27</p>
+        <p  id="tipAmount" class="text-3xl text-Strongcyan">$0.00</p>
       </div>
 
       <div class="flex justify-between mb-7 lg:mb-32">
@@ -53,10 +53,10 @@
           <p class="text-base text-white">Total</p>
           <p class="text-sm  text-Darkgrayishcyan">/ person</p>
         </div>
-        <p class="text-3xl text-Strongcyan">$32.79</p>
+        <p id="Total" class="text-3xl text-Strongcyan">$0.00</p>
       </div>
 
-      <button class="bg-Strongcyan w-full h-11 rounded-md text-Verydarkcyan uppercase mb-5 lg:mb-0" >Reset</button>
+      <button id="Reset" class="bg-Strongcyan w-full h-11 rounded-md text-Verydarkcyan uppercase mb-5 lg:mb-0" >Reset</button>
     </section>
   </main>
   <footer class="text-sm text-center ">
@@ -66,5 +66,6 @@
     </p>
     
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
