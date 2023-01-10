@@ -540,6 +540,13 @@ video {
   }
 }
 
+.butonsActive{
+  --tw-bg-opacity: 1;
+  background-color: hsl(172 67% 45% / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(183 100% 15% / var(--tw-text-opacity));
+}
+
 .parrafo{
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -562,6 +569,14 @@ video {
   --tw-text-opacity: 1;
   color: hsl(183 100% 15% / var(--tw-text-opacity));
   outline-color: hsl(172, 67%, 45%);
+}
+
+.error{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .absolute{
@@ -681,6 +696,14 @@ video {
   padding-left: 0px;
 }
 
+.pl-16{
+  padding-left: 4rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -715,6 +738,11 @@ video {
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -784,16 +812,6 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .lg\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -801,5 +819,9 @@ video {
 
   .lg\:pr-4{
     padding-right: 1rem;
+  }
+
+  .lg\:pl-16{
+    padding-left: 4rem;
   }
 }
