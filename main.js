@@ -1,6 +1,7 @@
 
 const bill = document.getElementById('Bill');
 let billValue=bill.value
+
 const people=document.getElementById('People')
 let peopleValue=people.value
 const peopleSpam=document.getElementById('errorTx')
@@ -24,16 +25,17 @@ let valorTip=0
 botones.forEach(element=>{
     element.addEventListener('click',e=>{
         restablecer()
+        custom.value=``
         element.classList.add('butonsActive')
         valorTip=parseInt(e.target.innerText.slice(0,-1))
         calcularTip()
-       console.log(peopleValue)
     })
 })
 
 bill.addEventListener('input',()=>{
     billValue=bill.value
     calcularTip()
+
    
 })
 people.addEventListener('input',()=>{
@@ -74,11 +76,14 @@ reset.addEventListener('click',e=>{
 })
 
 function calcularTip(){
-    let calculotip=0
-    calculotip = ((billValue * valorTip / 100) / people.value)
-    tipamount.innerText = (calculotip).toFixed(2)
+    let calculotip = ((billValue * valorTip / 100) / people.value)
     let totalP = ((billValue / people.value) + calculotip)
-    total.innerText = (totalP).toFixed(2)
+    if(peopleValue!==''){
+        tipamount.innerText = (calculotip).toFixed(2)
+        total.innerText = (totalP).toFixed(2)
+    }
+    
+    
     
 }
 function restablecer(){
