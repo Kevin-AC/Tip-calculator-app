@@ -74,10 +74,8 @@ reset.addEventListener('click',e=>{
 })
 
 function calcularTip(){
-    if(tipamount.innerText==NaN){
-        tipamount.innerText =`0.00`
-    }
-    let calculotip = ((billValue * valorTip / 100) / people.value)
+    let calculotip=0
+    calculotip = ((billValue * valorTip / 100) / people.value)
     tipamount.innerText = (calculotip).toFixed(2)
     let totalP = ((billValue / people.value) + calculotip)
     total.innerText = (totalP).toFixed(2)
